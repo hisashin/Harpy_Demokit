@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Hello Harpy DemoKit</string>
+	<string name="msg_please_connect">Please connect HarpyADK&amp;H2A boards.</string>
+	<string name="msg_released">Button Released</string>
+	<string name="msg_clicked">Button Clicked</string>
+</resources>

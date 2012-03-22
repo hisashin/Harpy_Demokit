@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/ButtonContainer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+		android:paddingLeft="10dip" android:paddingRight="10dip">
+		<LinearLayout
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:layout_weight="0.2" android:layout_marginTop="5dip"
+			android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_horizontal">
+			<TextView android:text="Welcome to Hello Harpy Demokit"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="5dip"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:layout_weight="1" android:layout_marginTop="5dip"
+			android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_horizontal">
+			<ImageView android:src="@drawable/harpy"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_weight="0.1">
+			<TextView android:text="RED" android:id="@+id/seekLabelRed"
+			    android:layout_height="wrap_content" android:layout_width="50dip"
+				android:layout_gravity="left|center_vertical" android:enabled="false"/>
+			<SeekBar android:id="@+id/seekBarRed"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"
+			    android:layout_gravity="left|center_vertical" android:layout_weight="1" android:enabled="false"/>
+			<TextView android:text="0" android:id="@+id/seekValueRed"
+			    android:layout_height="wrap_content" android:layout_width="40dip"
+				android:layout_gravity="center_vertical|right"  android:gravity="right" android:enabled="false"/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_weight="0.1">
+			<TextView android:text="GREEN" android:id="@+id/seekLabelGreen"
+			    android:layout_height="wrap_content" android:layout_width="50dip"
+				android:layout_gravity="left|center_vertical" android:enabled="false"/>
+			<SeekBar android:id="@+id/seekBarGreen"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"
+			    android:layout_gravity="left|center_vertical" android:layout_weight="1" android:enabled="false"/>
+			<TextView android:text="0" android:id="@+id/seekValueGreen"
+			    android:layout_height="wrap_content" android:layout_width="40dip"
+				android:layout_gravity="center_vertical|right"  android:gravity="right" android:enabled="false"/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_weight="0.1">
+			<TextView android:text="BLUE" android:id="@+id/seekLabelBlue"
+			    android:layout_height="wrap_content" android:layout_width="50dip"
+				android:layout_gravity="left|center_vertical" android:enabled="false"/>
+			<SeekBar android:id="@+id/seekBarBlue"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"
+			    android:layout_gravity="left|center_vertical" android:layout_weight="1" android:enabled="false"/>
+			<TextView android:text="0" android:id="@+id/seekValueBlue"
+			    android:layout_height="wrap_content" android:layout_width="40dip"
+				android:layout_gravity="center_vertical|right"  android:gravity="right" android:enabled="false"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:layout_weight="1" android:layout_marginTop="5dip"
+			android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_horizontal">
+			<TextView android:text="@string/msg_please_connect" android:id="@+id/buttonText"
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:layout_weight="1" android:layout_marginTop="5dip"
+			android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_horizontal">
+			<TextView android:text="Toriningen Inc."
+			    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
