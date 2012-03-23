@@ -10,6 +10,7 @@
 #define  LED3_RED	  2
 #define  LED3_GREEN	  4
 #define  LED3_BLUE	  3
+#define  LED_ORIG	  6
 
 //#define  LED2_RED		3
 //#define  LED2_GREEN	  7
@@ -101,6 +102,9 @@ void init_leds()
 	pinMode(LED3_RED, OUTPUT);
 	pinMode(LED3_GREEN, OUTPUT);
 	pinMode(LED3_BLUE, OUTPUT);
+
+	digitalWrite(LED_ORIG, 1);
+	pinMode(LED_ORIG, OUTPUT);
 }
 
 // void init_joystick(int threshold);
