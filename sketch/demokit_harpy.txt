@@ -45,7 +45,7 @@ AndroidAccessory acc("Toriningen Inc.",
 			 "HarpyDemoKit",
 			 "HarpyDemoKit Board",
 			 "1.0",
-			 "http://www.harpyhack.com",
+			 "https://play.google.com/store/apps/details?id=st.tori.harpy.adk.demokit",
 			 "00000000000");
 //Servo servos[3];
 
