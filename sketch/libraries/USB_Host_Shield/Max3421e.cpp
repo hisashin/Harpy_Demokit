@@ -36,10 +36,13 @@ static byte vbusState;
 
 /* Functions    */
 
+#if defined(__AVR_ATmega1280__) || (__AVR_ATmega2560__)
+
 #define INT		PE6
 #define INT_PORT	PORTE
 #define INT_DDR		DDRE
 #define INT_PIN		PINE
+
 
 #define RST		PJ2
 #define RST_PORT	PORTJ
@@ -50,6 +53,28 @@ static byte vbusState;
 #define GPX_PORT	PORTJ
 #define GPX_DDR		DDRJ
 #define GPX_PIN		PINJ
+
+#endif
+
+#if  defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__)
+
+#define INT		        1
+#define INT_PORT	PORTB
+#define INT_DDR		DDRB
+#define INT_PIN		PINB
+
+
+#define RST		7
+#define RST_PORT	PORTD
+#define RST_DDR		DDRD
+#define RST_PIN		PIND
+
+#define GPX		0
+#define GPX_PORT	PORTB
+#define GPX_DDR		DDRB
+#define GPX_PIN		PINB
+
+#endif
 
 
 void MAX3421E::setRST(uint8_t val)
